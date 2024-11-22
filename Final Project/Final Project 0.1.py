@@ -1,7 +1,7 @@
 # Define the allowed vehicles list
 AllowedVehiclesList = ['Ford F-150', 'Chevrolet Silverado', 'Tesla CyberTruck', 'Toyota Tundra', 'Nissan Titan']
 choice=""
-# Function to print all allowed vehicles
+# FC
 def print_allowed_vehicles():
     print("Allowed Vehicles:")
     for vehicle in AllowedVehiclesList:
@@ -9,7 +9,7 @@ def print_allowed_vehicles():
         
 # Function to display the menu
 def display_menu(): 
-        print("\nCarFinder Menu") 
+        print("\nAutoCountry Vehicle Finder v0.1") 
         print("1. PRINT all Allowed Vehicles") 
         print("2. Exit") 
         return input("Please enter your choice (1 or 2): ")
@@ -20,8 +20,9 @@ def main():
         choice = display_menu()
         if choice == '1':
             print_allowed_vehicles() 
+        
         elif choice == '2': 
-            print("Exiting the program. Have a great day!")
+            print("Thank you for using the AutoCountry Vehicle Finder, good-bye!")
             break
         else: 
             print("Invalid choice. Please try again.")
